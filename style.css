@@ -1,0 +1,272 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;;
+}
+
+
+/* PARTICLE JS */
+#particles-js {
+  position: relative;
+  width: 100%;
+  height: 850px;
+}
+
+#particles-js {
+  display: flex;
+}
+
+
+/* DARK MODE */
+.dark {
+  background-color: #333333;
+  color: #fcfcfc;
+}
+
+.dark .gallery,
+.display-4,
+.dark .iam,
+.dark .display-4 {
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+.display-4,
+.iam,
+.dark .iam,
+.dark .display-4 {
+  font-family: 'Volkhov', serif;
+}
+
+.display-4 {
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+}
+.dark .display-4 {
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
+}
+
+.iam, .gallery {
+  text-shadow: 1px 1px 10px rgb(255, 255, 255);
+}
+
+.dark .card {
+  background-color: #333333;
+}
+
+
+.dark .navbar,
+.dark .card,
+.dark .footer {
+  color: #fcfcfc;
+}
+
+
+.dark .btn,
+.dark .navbar,
+.dark .footer {
+  background-color: #112749;
+  border: none;
+}
+
+.dark .svg2 {
+  fill: #112749;
+}
+
+.dark .logoMim {
+  opacity: 0.5;
+}
+
+.dark .jumbotron {
+  background-image: url(img/Documentation/karpot1.jpg);
+}
+.dark #documentation {
+  background-image: url(img/Documentation/jatigede1.jpg);
+}
+/* Akhir Dark Mode */
+
+
+/* TOGLER DARK MODE */
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  box-sizing: border-box;
+  margin-top: 10px;
+  transform: scale(0.7);
+  background-color: rgb(199, 194, 194);
+  display: flex;
+  height: 26px;
+  width: 56px;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+}
+
+.ball {
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transition: 0.2s linear;
+  padding: 2px;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(30px);
+  background-color: #333333;
+}
+/* Akhir Togler Dark Mode */
+
+
+.navbar {
+  transition: top 0.3s;
+}
+
+.navbar,
+.footer {
+  background-color: #0d6efd;
+}
+
+
+/* HUMBERGER MENU */
+.dark .progress,
+.dark .bar1, 
+.dark .bar2, 
+.dark .bar3 {  
+  background-color: rgb(199, 194, 194);
+}
+
+.bar1, .bar2, .bar3 {
+  width: 25px;
+  height: 4px;
+  border-radius: 5px;
+  background-color: #fcfcfc;
+  margin: 3px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 5px);
+  transform: rotate(-45deg) translate(-5px, 5px);
+}
+.change .bar2 {opacity: 0;}
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -5px);
+  transform: rotate(45deg) translate(-5px, -5px);
+}
+
+
+.jumbotron {
+  padding-top: 6rem;
+  background-color: #333333;
+  background-image: url(img/Documentation/karpot.jpeg);
+  background-attachment: fixed;
+  background-size: cover;
+  transition: all 400ms ease;
+}
+
+
+.jumbotron-img {
+  position: absolute;
+  top: 180px;
+  margin-left: 0;
+  margin-right: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.rounded-circle:hover {
+  transform: scale(0.9);
+  filter: blur(1px);
+  cursor: not-allowed;
+}
+
+section h1 {
+  -webkit-text-stroke: 0.2px rgb(0, 0, 0);
+  font-weight: bold;
+  text-shadow: 1px 1 px 5px rgb(255, 255, 255);
+}
+
+
+/* TYPING ANIMASI */
+.typing::before {
+  content: '';
+  animation: animate infinite 10s;
+}
+@keyframes animate {
+  0% {
+    content: 'Photographer';
+  }
+  20% {
+    content: 'Geologist';
+  }
+  40% {
+    content: 'Drone Pilot';
+  }
+  60% {
+    content: 'Frontend Develover';
+  }
+  80% {
+    content: 'Photographer';
+  }
+  100% {
+    content: 'Geologist';
+  }
+}
+
+
+#about {
+  margin-bottom: 80px;
+}
+
+
+#documentation {
+  background-image: url(img/Documentation/jatigede.JPG);
+  background-attachment: fixed;
+  background-size: cover;
+  /* border: 5px solid black; */
+}
+
+
+.card-img-top {
+  box-shadow: 0 0 10px rgba(5, 5, 5, 0.7);
+  transition: all 400ms ease;
+}
+
+.card-img-top:hover {
+  transform: scale(1.1);
+  filter: blur(1px);
+  /* border-radius: 20px; */
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(5, 5, 5, 0.7);
+  overflow: hidden;
+  margin: 0 -10px 5px;
+  
+}
+
+
+section {
+  padding-top: 55px;
+}
+
+.alert {
+  margin-top: 10px;
+}
+
+ul li a.active {
+  font-weight: bold;
+}
+

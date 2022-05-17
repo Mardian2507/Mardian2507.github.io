@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.css" />
+
+  <!-- Lighbox2 CSS -->
+  <link rel="stylesheet" href="assets/lightBox/css/lightbox.css" />
+
+  <!-- My CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Volkhov&display=swap"
+    rel="stylesheet">
+
+  <!-- icon -->
+  <link rel="icon" type="image/x-icon" href="img/mim blue.png" />
+
+  <title>Portfolio</title>
+</head>
+
+<body id="home">
+
+  <!-- Navbar -->
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark shadow p-1 fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-2" href="#"> <img src="img/mim white.png" width="40" height="30"
+          class="logoMim rounded float-start" /></a>
+
+      <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <span class="navbar-toggler-icon btn-sm"></span> -->
+        <span onclick="myFunction(this)">
+          <p class="bar1"></p>
+          <p class="bar2"></p>
+          <p class="bar3"></p>
+        </span>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navbarNav">
+        <ul class="navbar-nav ms-auto me-2">
+          <!-- Darkmode -->
+          <li class="nav-item">
+            <div>
+              <input type="checkbox" class="checkbox" id="checkbox" onclick="darkMode()" />
+              <label for="checkbox" class="label">
+                <i class="fa-solid fa-moon"></i>
+                <i class="fa-solid fa-sun"></i>
+                <div class="ball"></div>
+              </label>
+            </div>
+          </li>
+          <!-- akhir Darkmode -->
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#documentation">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Akhir Navbar -->
+
+  <!-- Jumbotron -->
+  <section id="particles-js" class="jumbotron text-center">
+    <div class="jumbotron-img">
+      <img src="img/profilebg.jpg" alt="Mardian Suherman" width="200px" class="rounded-circle img-thumbnail" />
+      <h3 class="display-4">Mardian Suherman</h3>
+
+      <h4 class="iam">I'm <div class="typing"></div>
+      </h4>
+      <br />
+      <br />
+
+      <a class="whatsapp text-decoration-none" href="whatsapp://send?text=Hello&phone=+6285659467422"><button
+          class="btn btn-primary btn-sm"><i class="fa-brands fa-whatsapp"></i> Whatsapp </button></a>
+      <a href="img/CV Mardian Suherman.pdf"> <button class="btn btn-primary btn-sm"><i class="fa-solid fa-download"></i>
+          Download CV</button></a>
+
+    </div>
+  </section>
+  <!-- Akhir Jumbotron -->
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <div class="row text-center mb-4">
+        <div class="col">
+          <h2 class="mb-3">About Me</h2>
+
+          <div class="row justify-content-center text-center ">
+
+            <div class="col-md-6 col-lg-5 mb-5 mt-md-3">
+              <p class="text-center">
+                Hi, I am Mardian Suherman <br />
+                from Cianjur, <br />
+                I'm an enthusiastic and detail-oriented Frontend Software Engineer seeking an entry-level position with
+                Company to use my skills in coding, troubleshooting complex problems, and assisting in the timely
+                completion
+                of projects.
+              </p>
+              <div class="text-center">My projects : <br />
+
+                <button class="btn-sm btn-dark rounded-pill mb-2"><a class="text-light text-decoration-none "
+                    href="https://moztracker.web.app/"><i class="fa-solid fa-share"></i>
+                    moztracker.web.app</a></button><br />
+
+                <button class="btn-sm btn-dark rounded-pill mb-2"><a class="text-light text-decoration-none "
+                    href="https://marrimacafe.web.app/"><i class="fa-solid fa-share"></i> maRRima cafe</a></button>
+
+              </div>
+            </div>
+
+            <div class="col-md-4 col-lg-3 text-md-end">
+              <span>HTML</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
+              </div>
+              <br />
+              <span>CSS</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                  aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">70%</div>
+              </div>
+              <br />
+              <span>JavaScript</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                  aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">60%</div>
+              </div>
+              <br />
+              <span>Vue JS</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                  aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">50%</div>
+              </div>
+              <br />
+              <span>Bootstrap</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                  aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%">65%</div>
+              </div>
+              <br />
+              <span>Photoshop</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- Akhir About -->
+
+  <!-- Documentation -->
+  <section id="documentation">
+    <div class="container-fluid">
+
+      <div class="row text-center">
+        <h2 class="gallery">Gallery</h2>
+
+        <div class="col-10 offset-1">
+          <div id="image-gallery" class="row justify-content-center">
+            <div class="col-3 col-md-3">
+              <div class="card">
+                <a href="img/Gallery/bromo1.jpg" data-lightbox="roadtrip" data-title="Mount Bromo">
+                  <img src="img/Gallery/bromo1.jpg" class="card-img-top" /></a>
+                <!-- <div class="card-body">
+                  <p class="card-text text-center">
+                    span>Mount Bromo</> 
+                  </p>
+                </div> -->
+              </div>
+            </div>
+            <div class="col-3 col-md-3">
+              <div class="card">
+                <a href="img/Gallery/bromo2.jpg" data-lightbox="roadtrip" data-title="Mount Bromo"> <img
+                    src="img/Gallery/bromo2.jpg" class="card-img-top" /></a>
+              </div>
+            </div>
+            <div class="col-3 col-md-3">
+              <div class="card">
+                <a href="img/Gallery/bromo3.jpg" data-lightbox="roadtrip" data-title="Mount Bromo"> <img
+                    src="img/Gallery/bromo3.jpg" class="card-img-top" /></a>
+              </div>
+            </div>
+            <div class="col-3 col-md-3">
+              <div class="card">
+                <a href="img/Gallery/bali1.jpg" data-lightbox="roadtrip" data-title="Broken Beach"> <img
+                    src="img/Gallery/bali1.jpg" class="card-img-top" /> </a>
+              </div>
+            </div>
+            <div class="col-3 col-md-3">
+              <div class="card">
+                <a href="img/Gallery/bali2.JPG" data-lightbox="roadtrip" data-title="Kelingking Beach"> <img
+                    src="img/Gallery/bali2.JPG" class="card-img-top" /></a>
+              </div>
+            </div>
+            <div class="col-3 col-md-3">
+              <div class="card">
+                <a href="img/Gallery/bali3.jpeg" data-lightbox="roadtrip" data-title="Diamond Beach"> <img
+                    src="img/Gallery/bali3.jpeg" class="card-img-top" /></a>
+              </div>
+            </div>
+            <div class="col-3 col-md-3">
+              <div class="card">
+                <a href="img/Gallery/camp1.jpg" data-lightbox="roadtrip" data-title="Ranca Upas"> <img
+                    src="img/Gallery/camp1.jpg" class="card-img-top" /></a>
+              </div>
+            </div>
+            <div class="col-3 col-md-3">
+              <div class="card">
+                <a href="img/Gallery/camp3.jpg" data-lightbox="roadtrip" data-title="Ranca Upas"> <img
+                    src="img/Gallery/camp3.jpg" class="card-img-top" /></a>
+              </div>
+            </div>
+            <div class="col-3 col-md-3">
+              <div class="card">
+                <a href="img/Gallery/candi1.jpg" data-lightbox="roadtrip" data-title="Prambanan Temple"> <img
+                    src="img/Gallery/candi1.jpg" class="card-img-top" /></a>
+              </div>
+            </div>
+            <div class="col-3 col-md-3">
+              <div class="card">
+                <a href="img/Gallery/candi3.jpg" data-lightbox="roadtrip" data-title="Gate Of Heaven"> <img
+                    src="img/Gallery/candi3.jpg" class="card-img-top" /></a>
+              </div>
+            </div>
+            <div class="col-3 col-md-3">
+              <div class="card">
+                <a href="img/Gallery/my1.jpg" data-lightbox="roadtrip" data-title="Pura Ulun Danu"> <img
+                    src="img/Gallery/my1.jpg" class="card-img-top" /></a>
+              </div>
+            </div>
+            <div class="col-3 col-md-3">
+              <div class="card">
+                <a href="img/Gallery/my2.jpg" data-lightbox="roadtrip" data-title="Omnia Day Club"> <img
+                    src="img/Gallery/my2.jpg" class="card-img-top" /></a>
+              </div>
+            </div>
+            <div class="col-3 col-md-3">
+              <div class="card">
+                <a href="img/Gallery/my3.jpg" data-lightbox="roadtrip" data-title="Karpot Beach"> <img
+                    src="img/Gallery/my3.jpg" class="card-img-top" /></a>
+              </div>
+            </div>
+            <div class="col-3 col-md-3">
+              <div class="card">
+                <a href="img/Gallery/random1.jpg" data-lightbox="roadtrip" data-title="Citambur Falls"> <img
+                    src="img/Gallery/random1.jpg" class="card-img-top" /></a>
+              </div>
+            </div>
+            <div class="col-3 col-md-3">
+              <div class="card">
+                <a href="img/Gallery/random2.jpg" data-lightbox="roadtrip" data-title="Batu Paralayang"> <img
+                    src="img/Gallery/random2.jpg" class="card-img-top" /></a>
+              </div>
+            </div>
+            <div class="col-3 col-md-3  mb-5">
+              <div class="card">
+                <a href="img/Gallery/random3.jpg" data-lightbox="roadtrip" data-title="Pura Uluwatu"> <img
+                    src="img/Gallery/random3.jpg" class="card-img-top" /></a>
+              </div>
+            </div>
+
+            <!-- <div class="btncontainer text-center">
+              <button>Load More</button>
+            </div> -->
+          </div>
+
+        </div>
+      </div>
+
+      <div class="d-sm-block d-md-none ">
+        <div class="row justify-content-center">
+
+          <div class="col-11 carousel">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner rounded-3 mb-5 ">
+                <div class="carousel-item active">
+                  <img src="img/Gallery/bali1.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/Gallery/bali2.JPG" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/Gallery/bali3.jpeg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/Gallery/bromo1.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/Gallery/bromo2.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/Gallery/bromo3.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/Gallery/camp1.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/Gallery/camp2.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/Gallery/camp3.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/Gallery/candi1.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/Gallery/candi2.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/Gallery/candi3.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/Gallery/my1.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/Gallery/my2.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/Gallery/my3.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/Gallery/random1.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/Gallery/random2.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/Gallery/random3.jpg" class="d-block w-100">
+                </div>
+
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+
+  </section>
+  <!-- Akhir Documentation -->
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <div class="row text-center mb-4">
+        <div class="col">
+          <h2>Let's Talk</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form name="contactMe">
+            <div class="mb-3">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="input name"
+                name="nama" />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="input email"
+                name="email" />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="3" placeholder="input your message"
+                name="pesan"></textarea>
+            </div>
+
+            <div class="text-center text-md-end">
+              <button type="submit" class="btn btn-sm btn-primary btn-kirim">Send</button>
+            </div>
+
+            <div class="text-center text-md-end">
+              <button class="btn btn-sm btn-primary btn-loading d-none" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
+            </div>
+
+          </form>
+          <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+            </p><i class="fa-solid fa-envelope-circle-check"></i>
+            Message sent successfully
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path class="svg2" fill="#0d6efd" fill-opacity="1"
+        d="M0,32L21.8,37.3C43.6,43,87,53,131,80C174.5,107,218,149,262,160C305.5,171,349,149,393,160C436.4,171,480,213,524,234.7C567.3,256,611,256,655,250.7C698.2,245,742,235,785,240C829.1,245,873,267,916,261.3C960,256,1004,224,1047,202.7C1090.9,181,1135,171,1178,149.3C1221.8,128,1265,96,1309,69.3C1352.7,43,1396,21,1418,10.7L1440,0L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z">
+      </path>
+    </svg>
+  </section>
+  <!-- Akhir Contact -->
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="col-8 offset-2 shadow-sm text-white text-center pb-5">
+      <p><i class="fa fa-copyright"></i> 2022 copyright : <strong> Mardian Suherman</strong>
+      </p>
+
+      <a href="https://github.com/Mardian2507" class="display-6 text-white fw-bold text-decoration-none"><i
+          class="fa-brands fa-github-square text-light me-4 me-md-5"></i></a>
+
+      <a href="https://www.instagram.com/m_ardi_an/" class="display-6 text-white fw-bold text-decoration-none"><i
+          class="fa-brands fa-instagram text-light me-4 me-md-5"></i></a>
+
+      <a href="https://www.linkedin.com/in/mardian-suherman-6a054a183/"
+        class="display-6 text-white fw-bold text-decoration-none"><i class="fa-brands fa-linkedin text-light"></i></a>
+
+    </div>
+  </div>
+  <!-- Akhir Footer -->
+
+  <script src="assets/js/particle.js"></script>
+
+  <script src="assets/lightBox/js/lightbox-plus-jquery.js"></script>
+
+  <script src="assets/js/script.js"></script>
+
+  <script src="assets/js/bootstrap.js"></script>
+
+  <script src="assets/js/fontAwesome.js"></script>
+
+
+</body>
+
+</html>
