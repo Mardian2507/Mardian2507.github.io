@@ -123,30 +123,30 @@ particlesJS(
 
 // MESSEGE SEND
 const scriptURL = "https://script.google.com/macros/s/AKfycbwZ_5LCpGEixrnivyvxnpIJqO-qiN3W2lRFZe6Y0grSjDdwfPAXbILTH2HtD7v_g5Me/exec";
-      const form = document.forms["contactMe"];
-      const btnKirim = document.querySelector(".btn-kirim");
-      const btnLoading = document.querySelector(".btn-loading");
-      const myAlert = document.querySelector(".my-alert");
+const form = document.forms["contactMe"];
+const btnKirim = document.querySelector(".btn-kirim");
+const btnLoading = document.querySelector(".btn-loading");
+const myAlert = document.querySelector(".my-alert");
 
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        // ketika submit di klik tampilkan loading dan hilangkan tombol kirim
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    // ketika submit di klik tampilkan loading dan hilangkan tombol kirim
+    btnLoading.classList.toggle("d-none");
+    btnKirim.classList.toggle("d-none");
+
+    fetch(scriptURL, { method: "POST", body: new FormData(form) })
+      .then((response) => {
+        // setelah sukses terkirim maka munculkan lgi tombol kirim dan hilangkan loadingnya
         btnLoading.classList.toggle("d-none");
         btnKirim.classList.toggle("d-none");
-
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {
-            // setelah sukses terkirim maka munculkan lgi tombol kirim dan hilangkan loadingnya
-            btnLoading.classList.toggle("d-none");
-            btnKirim.classList.toggle("d-none");
-            // menampilkan alert pesan sudah sukses dikirim
-            myAlert.classList.toggle("d-none");
-            // form reset tulisan nama pemai dan pesan jadi kosong lgi
-            form.reset();
-            console.log("Success!", response);
-          })
-          .catch((error) => console.error("Error!", error.message));
-      });
+        // menampilkan alert pesan sudah sukses dikirim
+        myAlert.classList.toggle("d-none");
+        // form reset tulisan nama pemai dan pesan jadi kosong lgi
+        form.reset();
+        console.log("Success!", response);
+      })
+      .catch((error) => console.error("Error!", error.message));
+  });
 
 
 // LINK ACTIVE

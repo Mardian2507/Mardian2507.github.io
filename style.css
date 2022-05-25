@@ -7,6 +7,12 @@ body {
   font-family: 'Montserrat', sans-serif;;
 }
 
+@media only screen and (min-width: 720px) {
+  #navbarNav {
+    text-transform:uppercase;
+  }
+}
+
 
 /* PARTICLE JS */
 #particles-js {
@@ -70,12 +76,13 @@ body {
   border: none;
 }
 
-.dark .svg2 {
+.dark .wave {
   fill: #112749;
+  
 }
 
 .dark .logoMim {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .dark .jumbotron {
@@ -95,7 +102,7 @@ body {
 
 .label {
   box-sizing: border-box;
-  margin-top: 10px;
+  margin-top: 8px;
   transform: scale(0.7);
   background-color: rgb(199, 194, 194);
   display: flex;
@@ -171,13 +178,12 @@ body {
   background-image: url(img/Documentation/karpot.jpeg);
   background-attachment: fixed;
   background-size: cover;
-  transition: all 400ms ease;
+  /* transition: all 400ms ease; */
 }
-
 
 .jumbotron-img {
   position: absolute;
-  top: 180px;
+  top: 100px;
   margin-left: 0;
   margin-right: 0;
   left: 0;
@@ -187,8 +193,15 @@ body {
 
 .rounded-circle:hover {
   transform: scale(0.9);
-  filter: blur(1px);
-  cursor: not-allowed;
+  transition: all 400ms ease;
+ background-color: #000; 
+}
+
+.nav-link:hover {
+  transform: scale(1.3);
+  transition: all 400ms ease;
+  /* font-weight: bold; */
+  color: #fff !important;
 }
 
 section h1 {
@@ -226,10 +239,10 @@ section h1 {
 
 
 #about {
-  margin-bottom: 80px;
+  margin-bottom: 100px;
 }
 
-
+#portfolio,
 #documentation {
   background-image: url(img/Documentation/jatigede.JPG);
   background-attachment: fixed;
@@ -254,7 +267,7 @@ section h1 {
   box-shadow: 2px 2px 10px rgba(5, 5, 5, 0.7);
   overflow: hidden;
   margin: 0 -10px 5px;
-  
+  height: 100%;
 }
 
 
@@ -269,4 +282,99 @@ section {
 ul li a.active {
   font-weight: bold;
 }
+
+/* Footer Animasi */
+footer {
+  width:100vw;
+  /* position:fixed; */
+  bottom:0px
+}
+footer div {
+  background-color:#4478e3;
+  margin: -5px 0px 0px 0px;
+  padding:0px;
+  color: #fff;
+  text-align:center;
+}
+svg {
+  width:100%;
+}
+.arrow {
+  stroke-width: .3px;
+  stroke: #fff;
+}
+.topball {
+  animation: ball 1.5s ease-in-out;
+  animation-iteration-count:infinite;
+  animation-direction: alternate;
+  animation-delay: 0.3s;
+  cursor:pointer;
+}
+
+.wave {
+  animation: wave 3s linear;
+  animation-iteration-count:infinite;
+  fill: #0d6efd;
+}
+.drop {
+  fill: transparent;
+  animation: drop 5s ease infinite normal;
+  stroke: #4478e3;
+  stroke-width:0.5;
+  opacity:.6; 
+  transform: translateY(80%);
+}
+.drop1 {
+  transform-origin: 20px 3px;
+}
+.drop2 {
+  animation-delay: 3s;
+  animation-duration:3s;
+  transform-origin: 25px 3px;
+}
+.drop3 {
+  animation-delay: -2s;
+  animation-duration:3.4s;
+  transform-origin: 16px 3px;
+}
+.gooeff {
+  filter: url(#goo);
+}
+#wave2 {
+  animation-duration:5s;
+  animation-direction: reverse;
+  opacity: .6
+}
+#wave3 {
+  animation-duration: 7s;
+  opacity:.3;
+}
+@keyframes drop {
+  0% {
+    transform: translateY(80%); 
+    opacity:.6; 
+  }
+  80% {
+    transform: translateY(80%); 
+    opacity:.6; 
+  }
+  90% { 
+    transform: translateY(10%) ; 
+    opacity:.6; 
+  }
+  100% { 
+    transform: translateY(0%) scale(1.5);  
+    stroke-width:0.2;
+    opacity:0; 
+  }
+}
+@keyframes wave {
+  to {transform: translateX(-100%);}
+}
+@keyframes ball {
+  to {transform: translateY(20%);}
+}
+
+
+
 
