@@ -387,21 +387,21 @@
             <div class="mb-3">
               <label for="name" class="form-label">Full Name</label>
               <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="input name"
-                name="nama" />
+                name="nama" minlength="3" maxlength="20" required />
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Email</label>
               <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="input email"
-                name="email" />
+                name="email" required />
             </div>
             <div class="mb-3">
               <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" id="message" rows="3" placeholder="input your message"
-                name="pesan"></textarea>
+              <textarea class="form-control" id="message" rows="3" placeholder="input your message" name="pesan"
+                minlength="5" maxlength="300" required></textarea>
             </div>
 
             <div class="text-center text-md-end">
-              <button type="submit" class="btn btn-sm btn-primary btn-kirim">Send</button>
+              <button type="submit" class="btn btn-sm btn-primary btn-kirim" onclick="doinsert()">Send</button>
             </div>
 
             <div class="text-center text-md-end">

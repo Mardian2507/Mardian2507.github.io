@@ -121,6 +121,30 @@ particlesJS(
 );
 
 
+// Validasi
+function doinsert() {
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let message = document.getElementById("message").value;
+  if(name==""&&email==""&&message==""){
+      alert('Input your full name'+'\n'+'Input your email'+'\n'+'Input your message'+'\n\n\n'+'Thanks a lot');
+  }
+  else if(name==""){
+      document.getElementsByName("nama")[0].placeholder="Please input your name";
+  }
+  else if (email == "") {
+      document.getElementsByName("email")[0].placeholder="Please input your email";
+  }
+  else if (message == "") {
+      document.getElementsByName("pesan")[0].placeholder="Please input your message";
+  }
+  else{
+    alert('Berhasil !!'+'Nama:'+nama+'\n'+'Email:'+email+'\n'+'Pesan:'+pesan);
+  }
+  
+}
+
+
 // MESSEGE SEND
 const scriptURL = "https://script.google.com/macros/s/AKfycbwZ_5LCpGEixrnivyvxnpIJqO-qiN3W2lRFZe6Y0grSjDdwfPAXbILTH2HtD7v_g5Me/exec";
 const form = document.forms["contactMe"];
